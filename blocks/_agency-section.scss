@@ -1,0 +1,48 @@
+.agency-section {
+  @include fl(flex, center, center);
+  gap: 118px;
+  margin-bottom: 181px;
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+  &__video {
+    width: 100%;
+    position: relative;
+    border-radius: 32px;
+
+    img {
+      position: relative;
+      width: 100%;
+      box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+    }
+    &::before {
+      bottom: -64px;
+      right: -41px;
+      position: absolute;
+      content: "";
+      display: block;
+      width: 129px;
+      height: 129px;
+      border-radius: 50%;
+      background: $semiOrange;
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__info {
+  }
+}
+.info-agency {
+  max-width: 532px;
+
+  &__title {
+    @include text($black, $ff-main, 40px, 400, normal);
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    @include text($darkGrey, $ff-main, 16px, 400, 160%);
+  }
+}

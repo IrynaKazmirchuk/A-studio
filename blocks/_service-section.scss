@@ -1,0 +1,104 @@
+.service-section {
+  display: flex;
+  gap: 91px;
+  align-items: center;
+  margin-bottom: 146px;
+  @include tablet {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.info-service {
+  &__title {
+    @include text($black, $ff-main, 40px, 400, normal);
+    margin-bottom: 30px;
+    max-width: 358px;
+  }
+
+  &__desc {
+    @include text($darkGrey, $ff-main, 16px, 400, 160%);
+    max-width: 396px;
+  }
+}
+.cards-col {
+  display: flex;
+  gap: 34px;
+  @include mobile {
+    flex-direction: column;
+  }
+  &__1 {
+    padding-top: 79px;
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 39px 32px 57px;
+  max-width: 308px;
+  border-radius: 40px;
+  border: 1px solid #f2f2f2;
+  background: #fff;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.card-idea {
+  margin-bottom: 30px;
+}
+.card-icon {
+  &__bg {
+    width: 121px;
+    height: 121px;
+    border-radius: 20px;
+    padding: 23px;
+    margin-bottom: 31px;
+  }
+}
+.bg-idea {
+  background: #f1f7ff;
+}
+.card-title {
+  @include text($black, $ff-main, 24px, 400, normal);
+  margin-bottom: 27px;
+}
+.card-desc {
+  @include text($darkGrey, $ff-main, 16px, 400, 140%);
+  max-width: 245px;
+}
+.card-develop {
+}
+.bg-develop {
+  background: #fff2f8;
+}
+.card-finance {
+  margin-bottom: 30px;
+}
+.bg-finance {
+  background: #fff7e3;
+}
+.card-analys {
+  position: relative;
+  z-index: 99;
+
+  &__ellipse {
+    stroke-width: 8.8px;
+    stroke: #ff007a;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    bottom: -35px;
+    right: -40px;
+    @include desktop-small {
+      display: none;
+    }
+  }
+}
+.bg-analys {
+  background: #deffee;
+}

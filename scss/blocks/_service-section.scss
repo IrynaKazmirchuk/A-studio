@@ -13,11 +13,13 @@
     @include text($black, $ff-main, 40px, 400, normal);
     margin-bottom: 30px;
     max-width: 358px;
+    @include adaptiv-font(40, 24);
   }
 
   &__desc {
     @include text($darkGrey, $ff-main, 16px, 400, 160%);
     max-width: 396px;
+    @include adaptiv-font(16, 14);
   }
 }
 .cards-col {
@@ -44,6 +46,11 @@
   border: 1px solid #f2f2f2;
   background: #fff;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  transition: $transition;
+  &:hover {
+    transform: translateY(-7px);
+    scale: 1.1;
+  }
 }
 .card-idea {
   margin-bottom: 30px;
@@ -67,6 +74,7 @@
 .card-desc {
   @include text($darkGrey, $ff-main, 16px, 400, 140%);
   max-width: 245px;
+  @include adaptiv-font(16, 14);
 }
 .card-develop {
 }
@@ -81,19 +89,17 @@
 }
 .card-analys {
   position: relative;
-  z-index: 99;
-
-  &__ellipse {
-    stroke-width: 8.8px;
-    stroke: #ff007a;
+  &::before {
+    border: 10px solid #ff007a;
     position: absolute;
     content: "";
     display: block;
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    bottom: -35px;
+    bottom: -45px;
     right: -40px;
+    z-index: -1;
     @include desktop-small {
       display: none;
     }

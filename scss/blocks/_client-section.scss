@@ -11,6 +11,7 @@
   &__title {
     @include text($black, $ff-main, 40px, 400, normal);
     margin-bottom: 17px;
+    @include adaptiv-font(40, 24);
   }
 
   &__desc {
@@ -27,6 +28,10 @@
     flex-wrap: wrap;
   }
   &__logo {
+    transition: $transition;
+    &:hover {
+      scale: 1.1;
+    }
     .logo-amazon {
       padding-top: 24px;
     }

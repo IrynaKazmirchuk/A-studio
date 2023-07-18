@@ -1,0 +1,138 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  border-top: 1px solid #E4E4E4;;
+  @include desktop-small {
+    align-items: center;
+  }
+  &__logo {
+  }
+}
+.footer-column {
+  display: flex;
+  justify-content: space-between;
+  @include desktop-small {
+    flex-direction: column;
+    margin-bottom: 46px;
+  }
+  &__info {
+  }
+
+  &__menu {
+  }
+}
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    transition: $transition;
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      display: block;
+      background-color: $black;
+      width: 100%;
+      height: 1px;
+      transform: scale(0);
+      transition: $transition;
+    }
+    &:hover::after {
+      transform: scale(1);
+    }
+
+    @include tablet {
+      color: $white;
+    }
+  }
+
+  &__desc {
+    @include text($darkGrey, $ff-main, 14px, 400, 160%);
+    max-width: 270px;
+    margin-bottom: 46px;
+  }
+
+  &__socials {
+    margin-bottom: 46px;
+  }
+  @include desktop-small {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.social {
+  display: flex;
+  gap: 16px;
+  & img {
+    transition: $transition;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  &_facebook {
+  }
+
+  &_twitter {
+  }
+
+  &_linkedin {
+  }
+}
+.menu-item {
+  display: flex;
+  column-gap: 106px;
+  justify-content: flex-start;
+  @include tablet-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  @include mobile {
+    column-gap: 20px;
+  }
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  @include tablet-small {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    @include text($black, $ff-main, 20px, 400, normal);
+  }
+  &__nav {
+  }
+
+  &__ul {
+  }
+
+  &__li {
+  }
+
+  &__a {
+    @include text($black, $ff-main, 14px, 400, 200%);
+    &::after {
+      content: "";
+      display: block;
+      background-color: $black;
+      width: 100%;
+      height: 1px;
+      transform: scale(0);
+      transition: $transition;
+    }
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+}
+.footer-copy {
+  text-align: center;
+  margin-bottom: 23px;
+  @include text($darkGrey, $ff-main, 14px, 400, 160%);
+}

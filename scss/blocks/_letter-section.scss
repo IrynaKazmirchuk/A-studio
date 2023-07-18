@@ -1,0 +1,75 @@
+.letter-section {
+  display: flex;
+  border-radius: 75px;
+  background: #f4f9ff;
+  padding: 106px 92px;
+  gap: 40px;
+  margin-bottom: 146px;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-letter {
+    &__title {
+      @include text($black, $ff-main, 40px, 400, normal);
+      margin-bottom: 17px;
+      @include adaptiv-font(40, 24);
+      @include tablet {
+        text-align: center;
+      }
+    }
+
+    &__desc {
+      @include text($darkGrey, $ff-main, 18px, 400, 160%);
+      max-width: 550px;
+      @include tablet {
+        text-align: center;
+      }
+    }
+  }
+}
+.form {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 479px;
+  height: 80px;
+  border-radius: 60px;
+  background: $white;
+  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+  @include mobile {
+    flex-direction: column;
+    gap: 30px;
+    min-width: 280px;
+    height: 100%;
+    box-shadow: none;
+    background: #f4f9ff;
+  }
+  &__body {
+    padding-left: 24px;
+    @include text($darkGrey, $ff-main, 16px, 400, normal);
+    width: 100%;
+    border-radius: 60px;
+    border: 0;
+    outline: 0;
+    @include mobile {
+      min-width: 260px;
+      text-align: center;
+      padding: 24px;
+      box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+  .form__btn {
+    flex-shrink: 0;
+    overflow: hidden;
+    font-size: 16px;
+    max-width: 230px;
+    white-space: nowrap;
+    @include mobile {
+      min-width: 260px;
+      text-align: center;
+    }
+  }
+}

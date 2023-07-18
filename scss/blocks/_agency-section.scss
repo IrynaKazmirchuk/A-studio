@@ -9,10 +9,15 @@
     width: 100%;
     position: relative;
     border-radius: 32px;
+    transition: $transition;
+    &:hover {
+      scale: 1.1;
+    }
 
     img {
       position: relative;
       width: 100%;
+      border-radius: 32px;
       box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
     }
     &::before {
@@ -30,9 +35,6 @@
       }
     }
   }
-
-  &__info {
-  }
 }
 .info-agency {
   max-width: 532px;
@@ -40,9 +42,11 @@
   &__title {
     @include text($black, $ff-main, 40px, 400, normal);
     margin-bottom: 30px;
+    @include adaptiv-font(40, 24);
   }
 
   &__desc {
     @include text($darkGrey, $ff-main, 16px, 400, 160%);
+    @include adaptiv-font(16, 14);
   }
 }

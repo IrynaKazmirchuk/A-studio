@@ -1,8 +1,8 @@
 .service-section {
   display: flex;
-  gap: 91px;
+  gap: 91rem;
   align-items: center;
-  margin-bottom: 146px;
+  margin-bottom: 146rem;
   @include tablet {
     flex-direction: column;
     text-align: center;
@@ -10,26 +10,26 @@
 }
 .info-service {
   &__title {
-    @include text($black, $ff-main, 40px, 400, normal);
-    margin-bottom: 30px;
-    max-width: 358px;
+    @include text($black, $ff-main, 40rem, 400, normal);
+    margin-bottom: 30rem;
+    max-width: 358rem;
     @include adaptiv-font(40, 24);
   }
 
   &__desc {
-    @include text($darkGrey, $ff-main, 16px, 400, 160%);
-    max-width: 396px;
+    @include text($darkGrey, $ff-main, 16rem, 400, 160%);
+    max-width: 396rem;
     @include adaptiv-font(16, 14);
   }
 }
 .cards-col {
   display: flex;
-  gap: 34px;
+  gap: 34rem;
   @include mobile {
     flex-direction: column;
   }
   &__1 {
-    padding-top: 79px;
+    padding-top: 79rem;
     @include mobile {
       padding-top: 0;
     }
@@ -40,40 +40,40 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 39px 32px 57px;
-  max-width: 308px;
-  border-radius: 40px;
-  border: 1px solid #f2f2f2;
+  padding: 39rem 32rem 57rem;
+  max-width: 308rem;
+  border-radius: 40rem;
+  border: 1rem solid #f2f2f2;
   background: #fff;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0rem 10rem 50rem 0rem rgba(0, 0, 0, 0.05);
   transition: $transition;
   &:hover {
-    transform: translateY(-7px);
+    transform: translateY(-7rem);
     scale: 1.1;
   }
 }
 .card-idea {
-  margin-bottom: 30px;
+  margin-bottom: 30rem;
 }
 .card-icon {
   &__bg {
-    width: 121px;
-    height: 121px;
-    border-radius: 20px;
-    padding: 23px;
-    margin-bottom: 31px;
+    width: 121rem;
+    height: 121rem;
+    border-radius: 20rem;
+    padding: 23rem;
+    margin-bottom: 31rem;
   }
 }
 .bg-idea {
   background: #f1f7ff;
 }
 .card-title {
-  @include text($black, $ff-main, 24px, 400, normal);
-  margin-bottom: 27px;
+  @include text($black, $ff-main, 24rem, 400, normal);
+  margin-bottom: 27rem;
 }
 .card-desc {
-  @include text($darkGrey, $ff-main, 16px, 400, 140%);
-  max-width: 245px;
+  @include text($darkGrey, $ff-main, 16rem, 400, 140%);
+  max-width: 245rem;
   @include adaptiv-font(16, 14);
 }
 .card-develop {
@@ -82,7 +82,7 @@
   background: #fff2f8;
 }
 .card-finance {
-  margin-bottom: 30px;
+  margin-bottom: 30rem;
 }
 .bg-finance {
   background: #fff7e3;
@@ -90,15 +90,15 @@
 .card-analys {
   position: relative;
   &::before {
-    border: 10px solid #ff007a;
+    border: 10rem solid #ff007a;
     position: absolute;
     content: "";
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 120rem;
+    height: 120rem;
     border-radius: 50%;
-    bottom: -45px;
-    right: -40px;
+    bottom: -45rem;
+    right: -40rem;
     z-index: -1;
     @include desktop-small {
       display: none;

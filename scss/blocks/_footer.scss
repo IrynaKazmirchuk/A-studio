@@ -1,8 +1,8 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  border-top: 1px solid #E4E4E4;;
+  padding-top: 60rem;
+  border-top: 1rem solid #E4E4E4;;
   @include desktop-small {
     align-items: center;
   }
@@ -14,7 +14,7 @@
   justify-content: space-between;
   @include desktop-small {
     flex-direction: column;
-    margin-bottom: 46px;
+    margin-bottom: 46rem;
   }
   &__info {
   }
@@ -27,13 +27,13 @@
   flex-direction: column;
   &__logo {
     transition: $transition;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
     &::after {
       content: "";
       display: block;
       background-color: $black;
       width: 100%;
-      height: 1px;
+      height: 1rem;
       transform: scale(0);
       transition: $transition;
     }
@@ -47,13 +47,13 @@
   }
 
   &__desc {
-    @include text($darkGrey, $ff-main, 14px, 400, 160%);
-    max-width: 270px;
-    margin-bottom: 46px;
+    @include text($darkGrey, $ff-main, 14rem, 400, 160%);
+    max-width: 270rem;
+    margin-bottom: 46rem;
   }
 
   &__socials {
-    margin-bottom: 46px;
+    margin-bottom: 46rem;
   }
   @include desktop-small {
     flex-direction: row;
@@ -66,7 +66,7 @@
 }
 .social {
   display: flex;
-  gap: 16px;
+  gap: 16rem;
   & img {
     transition: $transition;
     &:hover {
@@ -84,7 +84,7 @@
 }
 .menu-item {
   display: flex;
-  column-gap: 106px;
+  column-gap: 106rem;
   justify-content: flex-start;
   @include tablet-small {
     display: grid;
@@ -92,19 +92,19 @@
     text-align: center;
   }
   @include mobile {
-    column-gap: 20px;
+    column-gap: 20rem;
   }
 }
 .item {
   display: flex;
   flex-direction: column;
   @include tablet-small {
-    margin-bottom: 30px;
+    margin-bottom: 30rem;
   }
 
   &__title {
-    margin-bottom: 24px;
-    @include text($black, $ff-main, 20px, 400, normal);
+    margin-bottom: 24rem;
+    @include text($black, $ff-main, 20rem, 400, normal);
   }
   &__nav {
   }
@@ -116,13 +116,13 @@
   }
 
   &__a {
-    @include text($black, $ff-main, 14px, 400, 200%);
+    @include text($black, $ff-main, 14rem, 400, 200%);
     &::after {
       content: "";
       display: block;
       background-color: $black;
       width: 100%;
-      height: 1px;
+      height: 1rem;
       transform: scale(0);
       transition: $transition;
     }
@@ -133,6 +133,6 @@
 }
 .footer-copy {
   text-align: center;
-  margin-bottom: 23px;
-  @include text($darkGrey, $ff-main, 14px, 400, 160%);
+  margin-bottom: 23rem;
+  @include text($darkGrey, $ff-main, 14rem, 400, 160%);
 }

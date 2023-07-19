@@ -1,18 +1,22 @@
 .letter-section {
   display: flex;
-  border-radius: 75px;
+  border-radius: 75rem;
   background: #f4f9ff;
-  padding: 106px 92px;
-  gap: 40px;
-  margin-bottom: 146px;
+  padding: 106rem 92rem;
+  gap: 40rem;
+  margin-bottom: 146rem;
   @include tablet {
     flex-direction: column;
     align-items: center;
   }
+  @include mobile {
+    border-radius: 40rem;
+    margin-bottom: 80rem;
+  }
   .info-letter {
     &__title {
-      @include text($black, $ff-main, 40px, 400, normal);
-      margin-bottom: 17px;
+      @include text($black, $ff-main, 40rem, 400, normal);
+      margin-bottom: 17rem;
       @include adaptiv-font(40, 24);
       @include tablet {
         text-align: center;
@@ -20,8 +24,8 @@
     }
 
     &__desc {
-      @include text($darkGrey, $ff-main, 18px, 400, 160%);
-      max-width: 550px;
+      @include text($darkGrey, $ff-main, 18rem, 400, 160%);
+      max-width: 550rem;
       @include tablet {
         text-align: center;
       }
@@ -30,45 +34,45 @@
 }
 .form {
   display: flex;
-  gap: 20px;
-  padding: 10px;
+  gap: 20rem;
+  padding: 10rem;
   justify-content: space-between;
   align-items: center;
-  min-width: 479px;
-  height: 80px;
-  border-radius: 60px;
+  min-width: 479rem;
+  height: 80rem;
+  border-radius: 60rem;
   background: $white;
-  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 10rem 20rem 50rem 0rem rgba(0, 0, 0, 0.15);
   @include mobile {
     flex-direction: column;
-    gap: 30px;
-    min-width: 280px;
+    gap: 30rem;
+    min-width: 280rem;
     height: 100%;
     box-shadow: none;
     background: #f4f9ff;
   }
   &__body {
-    padding-left: 24px;
-    @include text($darkGrey, $ff-main, 16px, 400, normal);
+    padding-left: 24rem;
+    @include text($darkGrey, $ff-main, 16rem, 400, normal);
     width: 100%;
-    border-radius: 60px;
+    border-radius: 60rem;
     border: 0;
     outline: 0;
     @include mobile {
-      min-width: 260px;
+      min-width: 260rem;
       text-align: center;
-      padding: 24px;
-      box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+      padding: 24rem;
+      box-shadow: 10rem 20rem 50rem 0rem rgba(0, 0, 0, 0.15);
     }
   }
   .form__btn {
     flex-shrink: 0;
     overflow: hidden;
-    font-size: 16px;
-    max-width: 230px;
+    font-size: 16rem;
+    max-width: 230rem;
     white-space: nowrap;
     @include mobile {
-      min-width: 260px;
+      min-width: 260rem;
       text-align: center;
     }
   }

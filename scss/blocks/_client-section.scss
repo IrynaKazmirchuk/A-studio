@@ -1,7 +1,7 @@
 .client-section {
   @include fl(flex, center, space-between);
-  gap: 60px;
-  margin-bottom: 94px;
+  gap: 60rem;
+  margin-bottom: 94rem;
   @include tablet {
     flex-direction: column;
     text-align: center;
@@ -9,21 +9,21 @@
 }
 .info-client {
   &__title {
-    @include text($black, $ff-main, 40px, 400, normal);
-    margin-bottom: 17px;
+    @include text($black, $ff-main, 40rem, 400, normal);
+    margin-bottom: 17rem;
     @include adaptiv-font(40, 24);
   }
 
   &__desc {
-    @include text($darkGrey, $ff-main, 18px, 400, 160%);
-    max-width: 336px;
+    @include text($darkGrey, $ff-main, 18rem, 400, 160%);
+    max-width: 336rem;
   }
 }
 .image-client {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 60rem;
   @include tablet-small {
     flex-wrap: wrap;
   }
@@ -33,7 +33,7 @@
       scale: 1.1;
     }
     .logo-amazon {
-      padding-top: 24px;
+      padding-top: 24rem;
     }
   }
 }

@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 148px;
+  margin-bottom: 148rem;
   @include tablet {
-    margin-bottom: 100px;
+    margin-bottom: 100rem;
   }
   .info-reviews {
     display: flex;
     flex-direction: column;
     text-align: center;
     &__title {
-      @include text($black, $ff-main, 40px, 400, normal);
-      margin-bottom: 17px;
+      @include text($black, $ff-main, 40rem, 400, normal);
+      margin-bottom: 17rem;
       @include adaptiv-font(40, 24);
       @include mobile {
         text-align: left;
@@ -20,12 +20,12 @@
     }
 
     &__desc {
-      @include text($darkGrey, $ff-main, 18px, 400, 160%);
-      max-width: 588px;
-      margin-bottom: 113px;
+      @include text($darkGrey, $ff-main, 18rem, 400, 160%);
+      max-width: 588rem;
+      margin-bottom: 113rem;
       @include adaptiv-font(18, 16);
       @include tablet {
-        margin-bottom: 60px;
+        margin-bottom: 60rem;
       }
       @include mobile {
         text-align: left;
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     @include tablet {
-      gap: 40px;
+      gap: 40rem;
       justify-content: center;
       flex-wrap: wrap;
     }
@@ -49,82 +49,82 @@
   img {
     max-width: 100%;
     height: 100%;
-    border-radius: 500px 0px 500px 500px;
-    box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 500rem 0rem 500rem 500rem;
+    box-shadow: 10rem 20rem 50rem 0rem rgba(0, 0, 0, 0.15);
     object-fit: cover;
   }
 }
 .review-reporter {
-  margin-left: 67px;
-  margin-right: 88px;
+  margin-left: 67rem;
+  margin-right: 88rem;
   @include tablet {
     margin-left: 0;
     margin-right: 0;
   }
   &__name {
-    @include text($black, $ff-main, 24px, 400, normal);
-    margin-bottom: 21px;
+    @include text($black, $ff-main, 24rem, 400, normal);
+    margin-bottom: 21rem;
     @include adaptiv-font(24, 22);
   }
 
   &__desc {
-    @include text($darkGrey, $ff-main, 16px, 400, 160%);
-    max-width: 412px;
+    @include text($darkGrey, $ff-main, 16rem, 400, 160%);
+    max-width: 412rem;
     @include adaptiv-font(16, 14);
     @include tablet {
-      margin-bottom: 70px;
+      margin-bottom: 70rem;
     }
   }
 }
 .gallary-photo {
-  width: 247px;
-  height: 355px;
+  width: 247rem;
+  height: 355rem;
   position: relative;
   & a {
     border-radius: 50%;
   }
   & img {
     @include tablet {
-      min-width: 100px;
+      min-width: 100rem;
     }
   }
   @include desktop-small {
-    width: 265px;
+    width: 265rem;
   }
   @include tablet {
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 20px;
+    gap: 20rem;
     flex-wrap: wrap;
     justify-content: space-around;
     position: static;
     display: flex;
   }
   &__1 {
-    top: 53px;
-    left: 0px;
+    top: 53rem;
+    left: 0rem;
   }
   &__2 {
-    top: 192px;
+    top: 192rem;
     left: 0;
     margin: 0;
     padding: 0;
   }
   &__3 {
-    top: 17px;
-    right: 35px;
+    top: 17rem;
+    right: 35rem;
   }
   &__4 {
-    top: 107px;
+    top: 107rem;
     right: 0;
     @include tablet {
-      max-width: 100px;
+      max-width: 100rem;
     }
   }
   &__5 {
     bottom: 0;
-    right: 52px;
+    right: 52rem;
   }
 }
 .general {
@@ -133,7 +133,7 @@
 
   &:hover {
     scale: 1.1;
-    box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 10rem 20rem 50rem 0rem rgba(0, 0, 0, 0.15);
   }
   @include tablet {
     position: static;

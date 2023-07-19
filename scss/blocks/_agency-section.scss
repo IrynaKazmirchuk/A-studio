@@ -1,14 +1,14 @@
 .agency-section {
   @include fl(flex, center, center);
-  gap: 118px;
-  margin-bottom: 181px;
+  gap: 118rem;
+  margin-bottom: 181rem;
   @include tablet {
     flex-direction: column-reverse;
   }
   &__video {
     width: 100%;
     position: relative;
-    border-radius: 32px;
+    border-radius: 32rem;
     transition: $transition;
     &:hover {
       scale: 1.1;
@@ -17,17 +17,17 @@
     img {
       position: relative;
       width: 100%;
-      border-radius: 32px;
-      box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 32rem;
+      box-shadow: 10rem 20rem 50rem 0rem rgba(0, 0, 0, 0.15);
     }
     &::before {
-      bottom: -64px;
-      right: -41px;
+      bottom: -64rem;
+      right: -41rem;
       position: absolute;
       content: "";
       display: block;
-      width: 129px;
-      height: 129px;
+      width: 129rem;
+      height: 129rem;
       border-radius: 50%;
       background: $semiOrange;
       @include tablet {
@@ -37,16 +37,16 @@
   }
 }
 .info-agency {
-  max-width: 532px;
+  max-width: 532rem;
 
   &__title {
-    @include text($black, $ff-main, 40px, 400, normal);
-    margin-bottom: 30px;
+    @include text($black, $ff-main, 40rem, 400, normal);
+    margin-bottom: 30rem;
     @include adaptiv-font(40, 24);
   }
 
   &__desc {
-    @include text($darkGrey, $ff-main, 16px, 400, 160%);
+    @include text($darkGrey, $ff-main, 16rem, 400, 160%);
     @include adaptiv-font(16, 14);
   }
 }

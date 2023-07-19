@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>ScssProject</title>
   </head>
-
   <body>
     <div class="container">
       <header class="header">
@@ -14,7 +17,11 @@
           <img src="img/logo.svg" alt="A+ Studio" />
         </a>
         <nav class="header__nav">
-          <ul class="header__ul">
+          <div id="burger" onclick="navToggle()">
+            <span class="material-icons icon-menu">menu</span>
+            <span class="material-icons icon-close">close</span>
+          </div>
+          <ul class="header__ul" id="headerMenu">
             <li class="header__li"><a href="/" class="header__a">Home</a></li>
             <li class="header__li">
               <a href="/" class="header__a">What We Do</a>
@@ -157,9 +164,14 @@
             />
           </h4>
         </div>
-        <div class="item"><h4>
-          <img src="https://svit-zdorovya.com/images/feature_variant/16/Hartmann-ag-logo.svg.png" alt="">
-        </h4></div>
+        <div class="item">
+          <h4>
+            <img
+              src="https://svit-zdorovya.com/images/feature_variant/16/Hartmann-ag-logo.svg.png"
+              alt=""
+            />
+          </h4>
+        </div>
       </div>
       <section class="service-section">
         <div class="service-section__info info-service">
@@ -401,5 +413,6 @@
     <script>
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

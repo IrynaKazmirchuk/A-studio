@@ -2,30 +2,12 @@
   display: flex;
   flex-direction: column;
   padding-top: 60rem;
-  border-top: 1rem solid #E4E4E4;;
+  border-top: 1rem solid #e4e4e4;
   @include desktop-small {
     align-items: center;
   }
   &__logo {
-  }
-}
-.footer-column {
-  display: flex;
-  justify-content: space-between;
-  @include desktop-small {
-    flex-direction: column;
-    margin-bottom: 46rem;
-  }
-  &__info {
-  }
-
-  &__menu {
-  }
-}
-.info-footer {
-  display: flex;
-  flex-direction: column;
-  &__logo {
+    display: inline-block;
     transition: $transition;
     margin-bottom: 20rem;
     &::after {
@@ -45,7 +27,21 @@
       color: $white;
     }
   }
-
+  
+}
+.footer-column {
+  display: flex;
+  justify-content: space-between;
+  @include desktop-small {
+    flex-direction: column;
+    margin-bottom: 46rem;
+  }
+  
+}
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  
   &__desc {
     @include text($darkGrey, $ff-main, 14rem, 400, 160%);
     max-width: 270rem;
@@ -73,14 +69,7 @@
       scale: 1.1;
     }
   }
-  &_facebook {
-  }
-
-  &_twitter {
-  }
-
-  &_linkedin {
-  }
+  
 }
 .menu-item {
   display: flex;
@@ -106,16 +95,9 @@
     margin-bottom: 24rem;
     @include text($black, $ff-main, 20rem, 400, normal);
   }
-  &__nav {
-  }
-
-  &__ul {
-  }
-
-  &__li {
-  }
-
+  
   &__a {
+    display: inline-block;
     @include text($black, $ff-main, 14rem, 400, 200%);
     &::after {
       content: "";

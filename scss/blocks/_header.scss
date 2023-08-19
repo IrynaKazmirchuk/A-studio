@@ -32,6 +32,8 @@
       justify-content: center;
       transform: translateX(-120%);
       transition: $transition;
+      @include mobile {
+        width: 250rem;
       &._active {
         transform: translateX(3.5%);
       }
